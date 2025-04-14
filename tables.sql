@@ -1,4 +1,5 @@
-
+CREATE DATABASE Bookstore;
+USE Bookstore;
 -- Table: book
 CREATE TABLE book (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -38,8 +39,7 @@ CREATE TABLE publisher (
     address VARCHAR(255),
     phone VARCHAR(20)
 
-CREATE DATABASE Bookstore;
-USE Bookstore;
+
 
 -- Table: cust_order
 CREATE TABLE cust_order (
