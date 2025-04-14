@@ -13,6 +13,7 @@ CREATE TABLE book (
 );
 -- Table: book_author (many-to-many)
 CREATE TABLE book_author (
+    book_author_id
     book_id INT,
     author_id INT,
     PRIMARY KEY (book_id, author_id),
@@ -54,6 +55,7 @@ CREATE TABLE cust_order (
 );
 -- Table: order_line
 CREATE TABLE order_line (
+    order_line_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
     quantity INT,
