@@ -37,7 +37,7 @@ CREATE TABLE publisher (
     name VARCHAR(255) NOT NULL,
     address VARCHAR(255),
     phone VARCHAR(20)
-=======
+
 CREATE DATABASE Bookstore;
 USE Bookstore;
 
@@ -81,7 +81,7 @@ CREATE TABLE order_history (
 CREATE TABLE order_status (
     status_id INT AUTO_INCREMENT PRIMARY KEY,
     status_name VARCHAR(50)
->>>>>>> bd8b2ac6b294b756bf7028245566d40b96b88d3d
+
 );
 
 -- Table: customer
