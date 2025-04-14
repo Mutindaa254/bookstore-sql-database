@@ -1,4 +1,5 @@
 CREATE DATABASE Bookstore;
+USE Bookstore;
 
 -- Table: cust_order
 CREATE TABLE cust_order (
