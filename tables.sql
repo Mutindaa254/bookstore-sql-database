@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 -- Table: book
 CREATE TABLE book (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -37,7 +37,7 @@ CREATE TABLE publisher (
     name VARCHAR(255) NOT NULL,
     address VARCHAR(255),
     phone VARCHAR(20)
-=======
+
 CREATE DATABASE Bookstore;
 USE Bookstore;
 
@@ -81,46 +81,4 @@ CREATE TABLE order_history (
 CREATE TABLE order_status (
     status_id INT AUTO_INCREMENT PRIMARY KEY,
     status_name VARCHAR(50)
->>>>>>> bd8b2ac6b294b756bf7028245566d40b96b88d3d
-);
-
--- Table: customer
-CREATE TABLE customer (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    full_name VARCHAR(100),
-    email VARCHAR(100) UNIQUE,
-    phone VARCHAR(20)
-);
-
--- Table: address
-CREATE TABLE address (
-    address_id INT AUTO_INCREMENT PRIMARY KEY,
-    street VARCHAR(255),
-    city VARCHAR(100),
-    zip_code VARCHAR(20),
-    country_id INT,
-    FOREIGN KEY (country_id) REFERENCES country(country_id)
-);
-
--- Table: address_status
-CREATE TABLE address_status (
-    status_id INT AUTO_INCREMENT PRIMARY KEY,
-    status_name VARCHAR(50)
-);
-
--- Table: customer_address
-CREATE TABLE customer_address (
-    customer_id INT,
-    address_id INT,
-    status_id INT,
-    PRIMARY KEY (customer_id, address_id),
-    FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
-    FOREIGN KEY (address_id) REFERENCES address(address_id),
-    FOREIGN KEY (status_id) REFERENCES address_status(status_id)
-);
-
--- Table: country
-CREATE TABLE country (
-    country_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL
 );
