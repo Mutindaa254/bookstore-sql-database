@@ -13,10 +13,9 @@ CREATE TABLE book (
 );
 -- Table: book_author (many-to-many)
 CREATE TABLE book_author (
-    book_author_id
+    book_author_id INT AUTO_INCREMENT PRIMARY KEY,
     book_id INT,
     author_id INT,
-    PRIMARY KEY (book_id, author_id),
     FOREIGN KEY (book_id) REFERENCES book(book_id),
     FOREIGN KEY (author_id) REFERENCES author(author_id)
 );
@@ -112,10 +111,10 @@ CREATE TABLE address_status (
 
 -- Table: customer_address
 CREATE TABLE customer_address (
+    customer_address_id INT AUTO_INCREMENT PRIMARY,
     customer_id INT,
     address_id INT,
     status_id INT,
-    PRIMARY KEY (customer_id, address_id),
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
     FOREIGN KEY (address_id) REFERENCES address(address_id),
     FOREIGN KEY (status_id) REFERENCES address_status(status_id)
