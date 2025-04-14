@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 -- Table: book
 CREATE TABLE book (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
